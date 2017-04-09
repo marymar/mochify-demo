@@ -6,5 +6,8 @@
   "scripts": {
     "phantom": "mochify",
     "test": "npm run phantom"
+  },
+  "devDependencies": {
+    "mochify": "^3.1.0"
   }
 }
