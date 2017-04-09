@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "mochify --watch",
+    "wd": "mochify --wd",
+    "cover": "mochify --cover",
     "phantom": "mochify",
-    "test": "npm run phantom"
+    "test": "node index.js"
   },
   "devDependencies": {
     "mochify": "^3.1.0"

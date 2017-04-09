@@ -1,6 +1,7 @@
 var mochify = require('mochify');
 
-mochify('./test/*.js', {
-  reporter : 'tap',
+mochify('./test/unit/*.js', {
+  debuug: true,
+  reporter : 'spec',
   cover    : true
 }).bundle();
