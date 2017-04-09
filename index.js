@@ -1,7 +1,13 @@
 var mochify = require('mochify');
+var stringify = require('stringify');
 
-mochify('./test/unit/*.js', {
-  debuug: true,
+mochify('./test/**/*.js', {
+  debug: false,
   reporter : 'spec',
-  cover    : true
-}).bundle();
+  cover    : false
+})
+.transform( stringify, {
+  appliesTo: {includeExtensions: ['.html']}
+})
+.bundle();
+

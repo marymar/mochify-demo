@@ -11,6 +11,11 @@
     "test": "node index.js"
   },
   "devDependencies": {
-    "mochify": "^3.1.0"
+    "js-fixtures": "^1.5.3",
+    "mochify": "^3.1.0",
+    "stringify": "^5.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }
